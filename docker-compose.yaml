@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_DB: mydatabase          # Set the default database name
+      POSTGRES_USER: myuser            # Set the default database user
+      POSTGRES_PASSWORD: mypassword    # Set the default database password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Mount volume for persistence
+    ports:
+      - "5432:5432"  # Map TCP port 5432 in the container to port 5432 on the host
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local

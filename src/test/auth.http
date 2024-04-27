@@ -1,0 +1,41 @@
+POST 18.216.201.227:8080/questify/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "ADMIN",
+  "username": "admin",
+  "email": "admin@gmail.com",
+  "password": "123",
+  "roles": [
+    {
+      "title": "ROLE_ADMIN"
+    }
+  ]
+}
+
+###
+
+POST 18.216.201.227:8080/questify/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Reach Nou",
+  "username": "user",
+  "email": "user@gmail.com",
+  "password": "123",
+  "roles": [
+    {
+      "title": "ROLE_USER"
+    }
+  ]
+}
+
+###
+
+POST localhost:8080/questify/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "123"
+}

@@ -1,0 +1,45 @@
+POST localhost:8080/api/v1/tasks?userId=1
+Content-Type: application/json
+Authorization: Beerer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiUk9MRSI6W3siaWQiOjEsInRpdGxlIjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJRdWVzdGlmeSIsImlhdCI6MTcxMzEyMzEzNywiZXhwIjoxNzEzMTU5MTM3fQ.ej_v2bAfRilxy8sfoRkPLOhKsV5pf9clo0gPctY1QP8
+
+{
+  "name": "Test",
+  "description": "test",
+  "deadline": "2024-04-15T15:53:16",
+  "priority": "LOW",
+  "status": "TODO"
+}
+
+###
+GET localhost:8080/api/v1/tasks
+Content-Type: application/json
+Authorization: Beerer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiUk9MRSI6W3siaWQiOjEsInRpdGxlIjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJRdWVzdGlmeSIsImlhdCI6MTcxMjg2MTU3NSwiZXhwIjoxNzEyODY1MTc1fQ.jSqrdHJATXaj2AjI0GsUeusOzJw5Y_CQp7_nnhSaYtM
+
+###
+GET localhost:8080/api/v1/tasks/user?userId=1
+Content-Type: application/json
+Authorization: Beerer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiUk9MRSI6W3siaWQiOjEsInRpdGxlIjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJRdWVzdGlmeSIsImlhdCI6MTcxMjg2MTU3NSwiZXhwIjoxNzEyODY1MTc1fQ.jSqrdHJATXaj2AjI0GsUeusOzJw5Y_CQp7_nnhSaYtM
+
+###
+GET localhost:8080/api/v1/tasks/1
+Content-Type: application/json
+Authorization: Beerer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiUk9MRSI6W3siaWQiOjEsInRpdGxlIjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJRdWVzdGlmeSIsImlhdCI6MTcxMjg2MTU3NSwiZXhwIjoxNzEyODY1MTc1fQ.jSqrdHJATXaj2AjI0GsUeusOzJw5Y_CQp7_nnhSaYtM
+
+
+###
+PUT localhost:8080/api/v1/tasks/1
+Content-Type: application/json
+Authorization: Beerer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiUk9MRSI6W3siaWQiOjEsInRpdGxlIjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJRdWVzdGlmeSIsImlhdCI6MTcxMjg2MTU3NSwiZXhwIjoxNzEyODY1MTc1fQ.jSqrdHJATXaj2AjI0GsUeusOzJw5Y_CQp7_nnhSaYtM
+
+{
+  "name": "Test update",
+  "description": "test update",
+  "deadline": "2024-12-31T15:53:16",
+  "priority": "MEDIUM",
+  "status": "ON_HOLD"
+}
+
+###
+DELETE localhost:8080/api/v1/tasks/1
+Content-Type: application/json
+Authorization: Beerer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiUk9MRSI6W3siaWQiOjEsInRpdGxlIjoiUk9MRV9VU0VSIn1dLCJpc3MiOiJRdWVzdGlmeSIsImlhdCI6MTcxMjg2MTU3NSwiZXhwIjoxNzEyODY1MTc1fQ.jSqrdHJATXaj2AjI0GsUeusOzJw5Y_CQp7_nnhSaYtM
